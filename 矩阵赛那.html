@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丰田赛那改装方案作品集</title>
+    <!-- 引入 TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        /* 微交互效果 */
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .dark .hover-effect:hover {
+            box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
+        }
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 dark:text-gray-200 dark:bg-gray-900">
+    <!-- 深色/浅色模式切换按钮 -->
+    <button id="theme-toggle" class="fixed top-4 right-4 p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:scale-110 transition-transform">
+        <i class="fa-solid fa-moon text-gray-600 dark:text-yellow-300"></i>
+    </button>
+
+    <!-- 主内容区域 -->
+    <main class="container mx-auto p-4 animate-fade-in">
+        <h1 class="text-3xl font-bold mb-8 text-center">丰田赛那改装方案作品集</h1>
+
+        <!-- 家用舒适省钱方案 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">丰田赛那《家用舒适省钱方案》</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300 dark:border-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">序号</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">改装类型</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">商品名称</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">特色功能</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单位</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单价</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">数量</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">小计</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车中排座椅改无轨道电动前后</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原厂高配开关控制</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1650</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1650</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车中排座椅改电动靠背</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原厂高配开关控制</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1550</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1550</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车中排座椅改电动腿托</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原厂高配开关控制</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1700</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1700</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">4</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排副驾电动座椅</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">四项调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">主副驾吸风加热</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">奥迪风机，原厂控制开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">6</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">翻转水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车桃木色，带220V电源，USB接口，点烟器，水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">7</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">多功能小桌板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">杯托，手机无线充电，氛围灯，角度可调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">900</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">8</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">吸顶电视</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动翻转，可触摸，投屏</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">9</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">中门拉手开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带开关，打孔真皮</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">10</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">实心铝地板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双面30丝铝材，耐磨，防滑</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">张</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">11</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">连体休息脚托</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">12</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">铝合金迎宾踏板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">13</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮材质，中间打孔</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">14</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">中排排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮材质，中间打孔</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">三排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮材质，中间打孔</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">16</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整车局部半包</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮手工工艺，包含仪表台中段，扶手通道，四门门板上段，侧壁上段，气囊盖</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">17</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排软包脚垫</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双层材料，可拆卸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">18</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动尾门</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双杆带电吸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">19</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">专用升级线束</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">继电保护器，各项电器产品独立保险</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">零售价</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">32270</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">4S店供应价（不含税）</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">19800</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 家商两用个性化方案 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">丰田赛那《家商两用个性化方案》</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300 dark:border-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">序号</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">改装类型</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">商品名称</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">特色功能</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单位</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单价</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">数量</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">小计</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">远行家二代轻享版航空座椅</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">移植气囊，不降低高度，超宽过道，通风，加热，按摩，无线充电，电动腿托，中门开关，氛围灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">7500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15000</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">桃木方向盘</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整圈真桃木替换款式</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排副驾电动座椅</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">四项调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">4</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">主副驾吸风加热</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">奥迪风机，原厂控制开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">翻转水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车桃木色，带220V电源，USB接口，点烟器，水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">6</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">水晶挡把</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带灯款</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">7</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">多功能小桌板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">杯托，手机无线充电，氛围灯，角度可调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">900</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">8</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">专用氛围灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">64色可调</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">9</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">吸顶电视</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动翻转，可触摸，投屏</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">10</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">中门拉手开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带开关，打孔真皮</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">11</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">铝合金顶灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3色可调</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">12</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">实心铝地板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双面30丝铝材，耐磨，防滑</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">张</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">13</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">连体休息脚托</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">14</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整车隔音</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双层隔音，包含底盘，四门门板，侧壁，机盖，尾门</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">铝合金迎宾踏板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">16</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">与中排座椅同材质和花纹</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">17</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">三排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">与中排座椅同材质和花纹</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">18</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整车局部半包</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮手工工艺，包含仪表台中段，扶手通道，四门门板上段，侧壁上段，气囊盖</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">19</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排软包脚垫</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双层材料，可拆卸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">20</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动尾门</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双杆带电吸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">21</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">专用升级线束</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">继电保护器，各项电器产品独立保险</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">零售价</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">48450</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">4S店供应价（不含税）</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">32800</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 家商两用豪华方案 -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">丰田赛那/格瑞维亚《家商两用豪华方案》</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300 dark:border-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">序号</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">改装类型</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">商品名称</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">特色功能</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单位</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">单价</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">数量</th>
+                            <th class="border border-gray-300 dark:border-gray-700 p-2 bg-gray-100 dark:bg-gray-800">小计</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">外观升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">卡德加大包围</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车数据开模，无损安装，3D镭雕，日行灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">外观升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">行李架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原厂款，上螺丝固定</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">外观升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">尾翼</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">注塑材质，运动款式</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">4</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">招财猫航空座椅</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">不降低高度，20CM过道，活动扶手，移植原车气囊</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">11000</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">22000</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">5</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">碳纤维运动方向盘</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">真碳纤维，平底设计</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">6</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排副驾电动座椅</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">四项调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">7</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">主副驾吸风加热</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">奥迪风机，原厂控制开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">8</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">翻转水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车桃木色，带220V电源，USB接口，点烟器，水杯架</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">780</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">9</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">水晶挡把</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带灯款</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">10</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">多功能小桌板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">杯托，手机无线充电，氛围灯，角度可调节</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">900</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">11</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">凤凰氛围灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">门板换件，流水灯效果</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">12</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">吸顶电视</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动翻转，可触摸，投屏</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">13</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">中门拉手开关</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带开关，打孔真皮</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">850</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">14</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">水母款顶灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3色可调</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">实心铝地板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双面30丝铝材，耐磨，防滑</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">张</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">16</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">连体休息脚托</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">17</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整车隔音</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双层隔音，包含底盘，四门门板，侧壁，机盖，尾门</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">3500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">18</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">碳纤维内饰</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">水转印工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1800</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">19</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">内饰升级</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">铝合金迎宾踏板</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带氛围灯，LOGO</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">750</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">20</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">与中排座椅同材质和花纹</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">21</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排座椅5D靠背头枕</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">加宽加厚海绵</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">对</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">22</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">三排座椅包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">与中排座椅同材质和花纹</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1400</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">23</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">整车全段包覆</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">纳帕皮手工工艺，包含仪表台中段，扶手通道，四门门板上段，侧壁上段，气囊盖</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">15500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">24</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">包覆工艺</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">前排软包脚垫</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双层材料，可拆卸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">450</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">25</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电动尾门</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">双杆带电吸</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2280</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">26</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">360全景系统</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">原车屏升级，2K高清夜视</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2300</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2300</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">27</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">C柱壁灯</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">满天星效果</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">个</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">180</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">360</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">28</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">星空顶</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">带流星效果，遥控器控制</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">台</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2500</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">2500</td>
+                        </tr>
+                        <tr class="hover-effect">
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">29</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">电子设备</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">专用升级线束</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">继电保护器，各项电器产品独立保险</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">套</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">1</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2">580</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">零售价</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">94790</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold" colspan="7">4S店供应价（不含税）</td>
+                            <td class="border border-gray-300 dark:border-gray-700 p-2 font-bold">55800</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- 作者信息区域 -->
+    <footer class="bg-gray-100 dark:bg-gray-800 p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">作者姓名: [成都矩阵改装中心]</p>
+            <a href=" https://v.douyin.com/ycM9Byj9EHY/ 9@2.com :0pm" class="text-red-500 hover:underline" target="_blank">
+                <i class="fa-brands fa-tiktok fa-xl" style="color: #000000;"></i> 官方抖音账号
+            </a>
+            <p class="mt-2">© 2025 [成都矩阵改装中心]. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 深色/浅色模式切换功能
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        function setTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            if (theme === 'dark') {
+                html.classList.add('dark');
+            } else {
+                html.classList.remove('dark');
+            }
+            localStorage.setItem('theme', theme);
+            updateIcon(theme);
+        }
+
+        function updateIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        // 初始化主题
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        setTheme(initialTheme);
+
+        // 切换主题事件监听
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+    </script>
+</body>
+</html>
